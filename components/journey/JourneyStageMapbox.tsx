@@ -1410,7 +1410,7 @@ export default function JourneyStageMapbox({ locale = 'vi' }: { locale?: Locale 
           state: prev.state,
           sources: { ...nextStyle.sources, ...keep },
           layers: layersOut,
-          terrain: terrainOn.current ? { source: 'terrain', exaggeration: EXAGGERATION } : undefined,
+          terrain: terrainOn.current ? { source: 'mapbox-dem', exaggeration: EXAGGERATION } : undefined,
         };
       },
     });
