@@ -1224,7 +1224,7 @@
    ========================================================================== */
 
 .frame3d {
-  /* Warm paper while tiles load: no dark flash before the dusk map appears. */
+  /* Warm paper while tiles load: no dark flash before the map appears. */
   background: #efe7da;
   touch-action: auto;
   user-select: auto;

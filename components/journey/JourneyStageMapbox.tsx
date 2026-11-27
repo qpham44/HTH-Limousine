@@ -390,15 +390,16 @@ function overlayLayers(locale: Locale): LayerSpecification[] {
     },
     {
       id: 'jm-active-glow', type: 'line', source: 'jm-active', layout: { 'line-join': 'round', 'line-cap': 'round' },
-      paint: { 'line-color': '#E2C290', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 14, 12, 26], 'line-blur': 11, 'line-opacity': 0.6 },
+      // Daylight map: a soft gold halo, a white casing and a deep champagne line, so the drive reads on pale land.
+      paint: { 'line-color': '#D4AF37', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 14, 12, 26], 'line-blur': 11, 'line-opacity': 0.3 },
     },
     {
       id: 'jm-active-case', type: 'line', source: 'jm-active', layout: { 'line-join': 'round', 'line-cap': 'round' },
-      paint: { 'line-color': '#F4E3C3', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 6.5, 12, 10, 15, 13], 'line-opacity': 0.35, 'line-blur': 2 },
+      paint: { 'line-color': '#FFFFFF', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 6.5, 12, 10, 15, 13], 'line-opacity': 0.92, 'line-blur': 0.5 },
     },
     {
       id: 'jm-active-line', type: 'line', source: 'jm-active', layout: { 'line-join': 'round', 'line-cap': 'round' },
-      paint: { 'line-color': '#E2C290', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 3.4, 12, 5.5, 15, 7.5] },
+      paint: { 'line-color': '#A8781C', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 3.4, 12, 5.5, 15, 7.5] },
     },
     // ---- symbols (above every basemap label) ----
     {

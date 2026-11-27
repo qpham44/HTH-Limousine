@@ -2,7 +2,7 @@ import type { Map as MBMap } from 'mapbox-gl';
 
 /**
  * Mapbox settings for the destination map: the Standard style (real 3D
- * buildings, landmarks and trees), a dusk light preset, no shop or
+ * buildings, landmarks and trees), the daylight preset, no shop or
  * restaurant labels, and Mapbox Terrain for relief.
  *
  * The token is a public (pk.) token read from NEXT_PUBLIC_MAPBOX_TOKEN
@@ -28,8 +28,8 @@ export const MB_BEFORE = 'road-label';
 export const DEST_VIEW = { zoom: 15.5, pitch: 65, bearing: -25, speed: 0.9, curve: 1.4 };
 
 /**
- * Mapbox Standard, configured: dusk light (champagne sky, buildings and trees
- * still legible), no shop or restaurant labels, and the terrain source used
+ * Mapbox Standard, configured: daylight (bright, clear buildings, trees and
+ * water), no shop or restaurant labels, and the terrain source used
  * for 3D relief at Da Lat, Bao Loc and Vung Tau.
  */
 export function applyStandardTheme(map: MBMap) {
@@ -40,7 +40,7 @@ export function applyStandardTheme(map: MBMap) {
       /* an option this style version does not have */
     }
   };
-  set('lightPreset', 'dusk');
+  set('lightPreset', 'day');
   set('showPointOfInterestLabels', false);
   set('showTransitLabels', false);
   set('show3dObjects', true);
