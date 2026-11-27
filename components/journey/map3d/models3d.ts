@@ -40,7 +40,16 @@ export interface ModelsHandle {
   layer: CustomLayerInterface;
   setCar(pos: LngLat | null, heading: number): void;
   refreshTrees(): void;
+  /** Relight the models to match the basemap's day, dusk or night preset. */
+  setLight(light: 'day' | 'dusk' | 'night'): void;
 }
+
+/** Light rig per basemap preset: daylight, a low warm sun, then cool moonlight. */
+const LIGHTS = {
+  day: { ambient: [0xffffff, 0.75], hemi: [0xffffff, 0xc9c0ad, 0.9], sun: [0xffffff, 1.6], fill: [0xdfe8ff, 0.45] },
+  dusk: { ambient: [0xffe6cc, 0.55], hemi: [0xffd2a6, 0x8a6f63, 0.6], sun: [0xffb877, 1.15], fill: [0xb9a7d6, 0.35] },
+  night: { ambient: [0xa9b6de, 0.32], hemi: [0x8796c4, 0x2a2b36, 0.38], sun: [0xc4cff0, 0.4], fill: [0x6d7fb8, 0.25] },
+} as const;
 
 const RAD = Math.PI / 180;
 const VAN_LENGTH = 6.2;
@@ -626,8 +635,10 @@ export function createModels(
 ): ModelsHandle {
   const scene = new THREE.Scene();
   const camera = new THREE.Camera();
-  scene.add(new THREE.AmbientLight(0xffffff, 0.75));
-  scene.add(new THREE.HemisphereLight(0xffffff, 0xc9c0ad, 0.9));
+  const ambient = new THREE.AmbientLight(0xffffff, 0.75);
+  scene.add(ambient);
+  const hemi = new THREE.HemisphereLight(0xffffff, 0xc9c0ad, 0.9);
+  scene.add(hemi);
   const sun = new THREE.DirectionalLight(0xffffff, 1.6);
   sun.position.set(-0.6, 1.4, -0.9);
   scene.add(sun);
@@ -739,6 +750,19 @@ export function createModels(
       car.on = true;
       car.at = pos;
       car.heading = heading;
+      map.triggerRepaint();
+    },
+    setLight(light) {
+      const l = LIGHTS[light] ?? LIGHTS.day;
+      ambient.color.setHex(l.ambient[0]);
+      ambient.intensity = l.ambient[1];
+      hemi.color.setHex(l.hemi[0]);
+      hemi.groundColor.setHex(l.hemi[1]);
+      hemi.intensity = l.hemi[2];
+      sun.color.setHex(l.sun[0]);
+      sun.intensity = l.sun[1];
+      fill.color.setHex(l.fill[0]);
+      fill.intensity = l.fill[1];
       map.triggerRepaint();
     },
     refreshTrees() {

@@ -1131,6 +1131,11 @@
 .layerBtn[aria-pressed='true'] { color: #202124; }
 .layerBtn[aria-pressed='true'] .layerTick { background: #1a73e8; border-color: #1a73e8; }
 .layerBtn + .layerBtn { border-left: 1px solid #e8eaed; }
+.lightBtn { gap: 6px; }
+.lightIcon { flex: none; color: #80868b; transition: color 0.2s ease; }
+.lightBtn[aria-pressed='true'] { color: #202124; background: #faf4e6; }
+.lightBtn[aria-pressed='true'] .lightIcon { color: #a8781c; }
+.lightBtn:disabled { cursor: default; opacity: 0.6; }
 @media (hover: hover) and (pointer: fine) {
   .filter:hover,
   .tourBtn:hover,

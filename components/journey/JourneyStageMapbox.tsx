@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { preconnect } from 'react-dom';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -41,7 +41,10 @@ import {
   type StepKind,
 } from './model';
 import { DETAIL_ZOOM, buildStyle, type BaseMode, type SatelliteConfig } from './map3d/style';
-import { DEST_VIEW, INITIAL_VIEW, MAPBOX_STYLE, MAPBOX_TOKEN, MB_BEFORE, applyStandardTheme } from './map3d/mapboxTheme';
+import {
+  ACTIVE_ROUTE_PAINT, DEST_VIEW, INITIAL_VIEW, LIGHT_PRESETS, MAPBOX_STYLE, MAPBOX_TOKEN, MB_BEFORE,
+  applyStandardTheme, setLightPreset, type LightPreset,
+} from './map3d/mapboxTheme';
 import { glyphDisc, limoMark, loadImage, originPin, peakMark, photoBubble, type Drawn } from './map3d/images';
 import { along, bearing as bearingOf, bounds, easeInOutCubic, headingAt, measure, slice, turn, type LngLat, type Measured } from './map3d/geo';
 import styles from './JourneyMap.module.css';
@@ -144,6 +147,10 @@ const C = {
     resetHcm: 'Về TP.HCM',
     viewRoute: 'Toàn cảnh lộ trình',
     viewDest: 'Góc nhìn 3D điểm đến',
+    light: 'Ánh sáng bản đồ',
+    lightDay: 'Ban ngày',
+    lightDusk: 'Hoàng hôn',
+    lightNight: 'Buổi tối',
     idealStyle: 'Kiểu chuyến lý tưởng',
     tourStop: 'Dừng',
     surprise: 'Gợi ý ngẫu nhiên',
@@ -221,6 +228,10 @@ const C = {
     resetHcm: 'Back to HCMC',
     viewRoute: 'Whole route',
     viewDest: '3D close-up',
+    light: 'Map light',
+    lightDay: 'Day',
+    lightDusk: 'Dusk',
+    lightNight: 'Night',
     idealStyle: 'Ideal trip style',
     tourStop: 'Stop',
     surprise: 'Surprise me',
@@ -320,6 +331,23 @@ const STEP_ICON: Record<StepKind, string> = {
   rest: 'M2.6-3.6A4 4 0 1 0 3.8 1.6A3.2 3.2 0 1 1 2.6-3.6Z',
   depart: 'M-4 0H3.6M1-2.6L3.6 0L1 2.6',
   home: 'M-4 0L0-3.8L4 0M-2.8-1V3.8H2.8V-1',
+};
+
+/** Sun, sun on the horizon, crescent moon: 14x14, drawn in currentColor. */
+const LIGHT_ICON: Record<LightPreset, ReactNode> = {
+  day: (
+    <>
+      <circle cx="7" cy="7" r="2.6" stroke="currentColor" strokeWidth="1.3" />
+      <path d="M7 1v1.6M7 11.4V13M1 7h1.6M11.4 7H13M2.8 2.8l1.1 1.1M10.1 10.1l1.1 1.1M2.8 11.2l1.1-1.1M10.1 3.9l1.1-1.1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+    </>
+  ),
+  dusk: (
+    <>
+      <path d="M3.6 9.5a3.4 3.4 0 0 1 6.8 0" stroke="currentColor" strokeWidth="1.3" />
+      <path d="M1 9.5h12M3 12h8M7 2.2v1.6M2.6 4.6l1.1 1.1M11.4 4.6l-1.1 1.1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+    </>
+  ),
+  night: <path d="M10.8 9.4A4.8 4.8 0 0 1 4.6 3.2a4.8 4.8 0 1 0 6.2 6.2Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />,
 };
 
 const pad2 = (n: number) => String(n).padStart(2, '0');
@@ -566,6 +594,9 @@ export default function JourneyStageMapbox({ locale = 'vi' }: { locale?: Locale 
   const mbRef = useRef<typeof import('mapbox-gl').default | null>(null);
   const glowRef = useRef<{ remove: () => void } | null>(null);
   const [destView, setDestView] = useState<'dest' | 'route'>('dest');
+  const [light, setLight] = useState<LightPreset>('day');
+  const lightRef = useRef<LightPreset>('day');
+  lightRef.current = light;
 
   /** Low, tilted close-up on the place itself: 3D buildings show from zoom 15. */
   const flyToDestination = (p: MapPoint, duration?: number) => {
@@ -1170,7 +1201,7 @@ export default function JourneyStageMapbox({ locale = 'vi' }: { locale?: Locale 
         map.once('style.load', () => {
           if (cancelled) return;
           performance.mark('jm:style');
-          applyStandardTheme(mbMap);
+          applyStandardTheme(mbMap, lightRef.current);
           addOverlays(map);
           void addImages(map);
           // Start with the attribution folded into its (i) button.
@@ -1189,6 +1220,7 @@ export default function JourneyStageMapbox({ locale = 'vi' }: { locale?: Locale 
                 });
                 map.addLayer(h.layer, map.getLayer(MB_BEFORE) ? MB_BEFORE : undefined);
                 modelsRef.current = h;
+                h.setLight(lightRef.current);
                 h.setCar(carRef.current.pos, carRef.current.brg);
                 h.refreshTrees();
               })
@@ -1388,6 +1420,22 @@ export default function JourneyStageMapbox({ locale = 'vi' }: { locale?: Locale 
     vis(['hillshade'], layers.terrain);
     syncTerrain();
   }, [layers, ready, syncTerrain]);
+
+  /* --------------------------------------------------------------- light */
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    setLightPreset(map as unknown as import('mapbox-gl').Map, light);
+    const p = ACTIVE_ROUTE_PAINT[light];
+    const paint = (id: string, key: string, value: unknown) => { if (map.getLayer(id)) map.setPaintProperty(id, key as never, value as never); };
+    paint('jm-active-glow', 'line-color', p.glow);
+    paint('jm-active-glow', 'line-opacity', p.glowOpacity);
+    paint('jm-active-case', 'line-color', p.casing);
+    paint('jm-active-case', 'line-opacity', p.casingOpacity);
+    paint('jm-active-line', 'line-color', p.line);
+    modelsRef.current?.setLight(light);
+  }, [light, ready]);
 
   const switchMode = useCallback((m: BaseMode) => {
     const map = mapRef.current;
@@ -1867,6 +1915,21 @@ export default function JourneyStageMapbox({ locale = 'vi' }: { locale?: Locale 
                 >
                   <span className={styles.layerTick} aria-hidden="true" />
                   {label}
+                </button>
+              ))}
+            </div>
+            <div className={styles.layerToggles} role="group" aria-label={c.light}>
+              {LIGHT_PRESETS.map((k) => (
+                <button
+                  key={k}
+                  type="button"
+                  className={`${styles.layerBtn} ${styles.lightBtn}`}
+                  aria-pressed={light === k}
+                  onClick={() => setLight(k)}
+                  disabled={!ready}
+                >
+                  <svg className={styles.lightIcon} width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">{LIGHT_ICON[k]}</svg>
+                  {k === 'day' ? c.lightDay : k === 'dusk' ? c.lightDusk : c.lightNight}
                 </button>
               ))}
             </div>
