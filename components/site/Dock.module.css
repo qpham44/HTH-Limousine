@@ -1,0 +1,42 @@
+/* Floating contact dock — desktop only. MobileBar covers the same ground
+   under 768px, so the two never show at once. */
+
+.dock {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: right 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* While the journey map's planner panel is docked to the right edge,
+   the dock steps to its left so it never covers the booking button. */
+:global(html[data-map-panel]) .dock { right: calc(440px + 22px); }
+
+.item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-alt);
+  border: 1px solid var(--rule-2);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
+}
+.item:hover { border-color: var(--gold); color: var(--gold); }
+
+.call { background: var(--gold); border-color: var(--gold); color: var(--ground); }
+.call:hover { background: var(--gold-warm); border-color: var(--gold-warm); color: var(--ground); }
+
+@media (max-width: 767px) {
+  .dock { display: none; }
+}

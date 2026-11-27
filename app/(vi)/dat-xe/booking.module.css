@@ -1,0 +1,27 @@
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: center;
+  padding-block: clamp(20px, 3vw, 40px) clamp(28px, 4vw, 44px);
+}
+@media (max-width: 880px) { .intro { grid-template-columns: 1fr; } }
+
+.callout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: clamp(24px, 3vw, 32px);
+  border: 1px solid var(--rule-2);
+  border-radius: 3px;
+  background: var(--ground-alt);
+}
+.callout p { font-size: 14.5px; line-height: 1.75; color: var(--ink-3); }
+.phone {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--gold-deep);
+  font-variant-numeric: tabular-nums;
+}
+.calloutActions { display: flex; gap: 10px; margin-top: 4px; }

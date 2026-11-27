@@ -1,0 +1,326 @@
+{
+ "source": "Footprints and bridge lines: OpenStreetMap contributors (ODbL) via Overpass API. Heights, spans and pylons as published.",
+ "monuments": [
+  {
+   "id": "nha-tho-duc-ba",
+   "kind": "cathedral",
+   "height": 57,
+   "lon": 106.699019,
+   "lat": 10.779803,
+   "bearing": 133.8,
+   "length": 89.2,
+   "width": 34.1,
+   "osm": "Nhà thờ Đức Bà Sài Gòn"
+  },
+  {
+   "id": "dinh-doc-lap",
+   "kind": "palace",
+   "height": 26,
+   "lon": 106.695313,
+   "lat": 10.776934,
+   "bearing": 132.4,
+   "length": 85.7,
+   "width": 76.3,
+   "osm": "Dinh Độc Lập"
+  },
+  {
+   "id": "cho-ben-thanh",
+   "kind": "market",
+   "height": 28,
+   "lon": 106.698015,
+   "lat": 10.772564,
+   "bearing": 149.2,
+   "length": 137.3,
+   "width": 98.8,
+   "osm": "Chợ Bến Thành"
+  },
+  {
+   "id": "hai-dang-vung-tau",
+   "kind": "lighthouse",
+   "height": 18,
+   "lon": 107.077655,
+   "lat": 10.33411,
+   "bearing": 50.8,
+   "length": 7.8,
+   "width": 7.8,
+   "osm": "Hải đăng Vũng Tàu"
+  },
+  {
+   "id": "ke-ga",
+   "kind": "lighthouse-stone",
+   "height": 35,
+   "lon": 107.991581,
+   "lat": 10.695285,
+   "bearing": 65.2,
+   "length": 6.6,
+   "width": 6.5,
+   "osm": "Hải đăng Kê Gà"
+  },
+  {
+   "id": "chua-kito",
+   "kind": "statue",
+   "height": 32,
+   "lon": 107.08452,
+   "lat": 10.326501,
+   "bearing": 102.2,
+   "length": 7.8,
+   "width": 7.1,
+   "osm": "Tượng Chúa Kitô Vua"
+  },
+  {
+   "id": "po-nagar",
+   "kind": "cham",
+   "height": 23,
+   "lon": 109.19518,
+   "lat": 12.26539,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "po-klong-garai",
+   "kind": "cham",
+   "height": 21,
+   "lon": 108.94642,
+   "lat": 11.60187,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "po-sah-inu",
+   "kind": "cham",
+   "height": 15,
+   "lon": 108.14612,
+   "lat": 10.93605,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "toa-thanh",
+   "kind": "caodai",
+   "height": 36,
+   "lon": 106.1326,
+   "lat": 11.2999,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "vinh-trang",
+   "kind": "pagoda",
+   "height": 15,
+   "lon": 106.37357,
+   "lat": 10.36284,
+   "bearing": 4.3,
+   "length": 75.4,
+   "width": 23.6,
+   "osm": "Chùa Vĩnh Tràng"
+  },
+  {
+   "id": "ba-chua-xu",
+   "kind": "temple-green",
+   "height": 18,
+   "lon": 105.080169,
+   "lat": 10.682115,
+   "bearing": 27.3,
+   "length": 28.0,
+   "width": 25.7,
+   "osm": "Miếu Bà Chúa Xứ"
+  },
+  {
+   "id": "van-mieu-tran-bien",
+   "kind": "temple",
+   "height": 13,
+   "lon": 106.80159,
+   "lat": 10.96451,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "nguyen-trung-truc",
+   "kind": "temple",
+   "height": 12,
+   "lon": 105.079491,
+   "lat": 10.011871,
+   "bearing": 153.8,
+   "length": 87.7,
+   "width": 79.6,
+   "osm": "Đình thần Nguyễn Trung Trực"
+  },
+  {
+   "id": "dinh-co",
+   "kind": "temple",
+   "height": 11,
+   "lon": 107.23423,
+   "lat": 10.386605,
+   "bearing": 163.2,
+   "length": 59.3,
+   "width": 23.3,
+   "osm": "Dinh Cô"
+  },
+  {
+   "id": "van-thanh-mieu-vl",
+   "kind": "temple",
+   "height": 11,
+   "lon": 105.98461,
+   "lat": 10.24289,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "ga-da-lat",
+   "kind": "station",
+   "height": 20,
+   "lon": 108.45443,
+   "lat": 11.9416,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "binh-thuy",
+   "kind": "house",
+   "height": 9,
+   "lon": 105.74963,
+   "lat": 10.067,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  },
+  {
+   "id": "linh-quy",
+   "kind": "pagoda",
+   "height": 14,
+   "lon": 107.80777,
+   "lat": 11.45147,
+   "bearing": 0,
+   "length": 0,
+   "width": 0
+  }
+ ],
+ "bridges": [
+  {
+   "name": "Cầu Cần Thơ",
+   "span": 550,
+   "pylon": 175,
+   "clearance": 37,
+   "line": [
+    [
+     105.800465,
+     10.02504
+    ],
+    [
+     105.819943,
+     10.040702
+    ]
+   ],
+   "length": 2749
+  },
+  {
+   "name": "Cầu Mỹ Thuận",
+   "span": 350,
+   "pylon": 124,
+   "clearance": 37,
+   "line": [
+    [
+     105.907578,
+     10.283988
+    ],
+    [
+     105.912502,
+     10.270879
+    ]
+   ],
+   "length": 1546
+  },
+  {
+   "name": "Cầu Mỹ Thuận 2",
+   "span": 350,
+   "pylon": 124,
+   "clearance": 37,
+   "line": [
+    [
+     105.904257,
+     10.283711
+    ],
+    [
+     105.909908,
+     10.2676
+    ]
+   ],
+   "length": 1885
+  },
+  {
+   "name": "Cầu Rạch Miễu",
+   "span": 270,
+   "pylon": 112,
+   "clearance": 37,
+   "line": [
+    [
+     106.340568,
+     10.352547
+    ],
+    [
+     106.346112,
+     10.32564
+    ]
+   ],
+   "length": 3036
+  },
+  {
+   "name": "Cầu Phú Mỹ",
+   "span": 380,
+   "pylon": 145,
+   "clearance": 45,
+   "line": [
+    [
+     106.723818,
+     10.732946
+    ],
+    [
+     106.753772,
+     10.750178
+    ]
+   ],
+   "length": 3790
+  },
+  {
+   "name": "Cầu Vàm Cống",
+   "span": 450,
+   "pylon": 150,
+   "clearance": 37,
+   "line": [
+    [
+     105.494111,
+     10.308123
+    ],
+    [
+     105.51447,
+     10.325803
+    ]
+   ],
+   "length": 2965
+  },
+  {
+   "name": "Cầu Cổ Chiên",
+   "span": 390,
+   "pylon": 135,
+   "clearance": 37,
+   "line": [
+    [
+     106.300915,
+     10.023399
+    ],
+    [
+     106.311418,
+     10.033993
+    ]
+   ],
+   "length": 1642
+  }
+ ]
+}

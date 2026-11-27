@@ -1,0 +1,68 @@
+{
+ "source": "Positions snapped to Terrarium elevation tiles; heights as published.",
+ "peaks": [
+  {
+   "id": "bidoup",
+   "vi": "Bidoup",
+   "en": "Bidoup",
+   "height": 2287,
+   "x": 951.0,
+   "y": 173.0,
+   "dem": 2243
+  },
+  {
+   "id": "langbiang",
+   "vi": "Langbiang",
+   "en": "Langbiang",
+   "height": 2167,
+   "x": 910.5,
+   "y": 182.0,
+   "dem": 2065
+  },
+  {
+   "id": "ba-den",
+   "vi": "Núi Bà Đen",
+   "en": "Ba Den Mountain",
+   "height": 986,
+   "x": 487.5,
+   "y": 307.5,
+   "dem": 926
+  },
+  {
+   "id": "chua-chan",
+   "vi": "Núi Chứa Chan",
+   "en": "Chua Chan",
+   "height": 837,
+   "x": 712.0,
+   "y": 391.5,
+   "dem": 805
+  },
+  {
+   "id": "nui-cam",
+   "vi": "Núi Cấm",
+   "en": "Cam Mountain",
+   "height": 705,
+   "x": 267.0,
+   "y": 475.0,
+   "dem": 552
+  },
+  {
+   "id": "ta-cu",
+   "vi": "Núi Tà Cú",
+   "en": "Ta Cu Mountain",
+   "height": 649,
+   "x": 809.0,
+   "y": 415.5,
+   "dem": 647
+  },
+  {
+   "id": "nui-chua",
+   "vi": "Núi Chúa",
+   "en": "Nui Chua",
+   "height": 1039,
+   "x": 1037.0,
+   "y": 242.0,
+   "dem": 1022
+  }
+ ]
+}

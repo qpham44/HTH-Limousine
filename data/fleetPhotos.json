@@ -1,0 +1,222 @@
+{
+ "hyundai-solati-dcar-limousine": [
+  {
+   "src": "/img/fleet/solati-pair-hotel.webp",
+   "alt": "Hai xe Solati D’Car của HTH trước sảnh khách sạn",
+   "altEn": "Two HTH Solati D’Car vans at a hotel entrance",
+   "width": 1672,
+   "height": 941
+  },
+  {
+   "src": "/img/fleet/solati-showroom.webp",
+   "alt": "Hai xe Solati D’Car trong showroom",
+   "altEn": "Two Solati D’Car vans in the showroom",
+   "width": 1664,
+   "height": 928
+  },
+  {
+   "src": "/img/fleet/solati-cabin-dusk.webp",
+   "alt": "Khoang khách Solati D’Car lúc hoàng hôn",
+   "altEn": "The Solati D’Car cabin at dusk",
+   "width": 1664,
+   "height": 928
+  },
+  {
+   "src": "/img/fleet/solati-cabin-runway.webp",
+   "alt": "Khoang khách Solati D’Car nhìn ra đường băng",
+   "altEn": "The Solati D’Car cabin looking out to the runway",
+   "width": 1664,
+   "height": 928
+  },
+  {
+   "src": "/img/fleet/solati-cabin-door.webp",
+   "alt": "Khoang khách Solati D’Car nhìn từ cửa trượt",
+   "altEn": "The Solati D’Car cabin from the sliding door",
+   "width": 1664,
+   "height": 928
+  },
+  {
+   "src": "/img/fleet/solati-cabin-stars.webp",
+   "alt": "Trần đèn sao trong khoang Solati D’Car",
+   "altEn": "The star-light ceiling in the Solati D’Car",
+   "width": 1536,
+   "height": 1024
+  },
+  {
+   "src": "/img/fleet/solati-cabin-ceiling.webp",
+   "alt": "Hàng ghế da và trần đèn LED trong Solati D’Car",
+   "altEn": "Leather seats under the LED ceiling of the Solati D’Car",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "src": "/img/fleet/solati-flowers.webp",
+   "alt": "Hoa tươi đặt sẵn trên ghế Solati D’Car",
+   "altEn": "Fresh flowers waiting on a Solati D’Car seat",
+   "width": 1122,
+   "height": 1402
+  },
+  {
+   "src": "/img/fleet/solati-luggage-hold.webp",
+   "alt": "Khoang hành lý Solati D’Car xếp vali nhôm và túi xách",
+   "altEn": "The Solati D’Car luggage hold with aluminium cases and bags",
+   "width": 1760,
+   "height": 894
+  }
+ ],
+ "ford-transit-dcar-limousine": [
+  {
+   "src": "/img/fleet/transit-dcar-street.webp",
+   "alt": "Ford Transit D’Car màu đen của HTH đỗ bên đường",
+   "altEn": "HTH’s black Ford Transit D’Car parked on the street",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "src": "/img/fleet/transit-dcar-door.webp",
+   "alt": "Ford Transit D’Car mở cửa trượt, nhìn vào khoang ghế",
+   "altEn": "The Ford Transit D’Car with its sliding door open",
+   "width": 1536,
+   "height": 1024
+  },
+  {
+   "src": "/img/fleet/transit-dcar-cabin-door.webp",
+   "alt": "Khoang khách Ford Transit D’Car nhìn từ cửa trượt",
+   "altEn": "The Ford Transit D’Car cabin from the sliding door",
+   "width": 1664,
+   "height": 928
+  },
+  {
+   "src": "/img/fleet/transit-dcar-aisle.webp",
+   "alt": "Lối đi sàn gỗ giữa hai hàng ghế Ford Transit D’Car",
+   "altEn": "The wood-floored aisle of the Ford Transit D’Car",
+   "width": 1536,
+   "height": 1024
+  },
+  {
+   "src": "/img/fleet/transit-dcar-golf-bags.webp",
+   "alt": "Bốn bộ gậy golf trong cốp sau Ford Transit D’Car",
+   "altEn": "Four golf bags in the Ford Transit D’Car rear hold",
+   "width": 1672,
+   "height": 941
+  }
+ ],
+ "bmw-520i": [
+  {
+   "src": "/img/fleet/bmw-hotel-front.webp",
+   "alt": "BMW 5 Series màu xanh đậm của HTH trước sảnh khách sạn",
+   "altEn": "HTH’s dark blue BMW 5 Series at a hotel entrance",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "src": "/img/fleet/bmw-hotel-rear.webp",
+   "alt": "BMW 5 Series nhìn từ phía sau trước khách sạn",
+   "altEn": "The BMW 5 Series from the rear at a hotel",
+   "width": 1446,
+   "height": 1087
+  },
+  {
+   "src": "/img/fleet/bmw-cockpit-hth.webp",
+   "alt": "Bảng điều khiển BMW 5 Series với logo HTH trên màn hình",
+   "altEn": "BMW 5 Series dashboard with the HTH logo on screen",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "src": "/img/fleet/bmw-rear-seats.webp",
+   "alt": "Hàng ghế sau bọc da đen của BMW 5 Series",
+   "altEn": "The black leather rear seats of the BMW 5 Series",
+   "width": 1535,
+   "height": 1024
+  }
+ ],
+ "kia-carnival": [
+  {
+   "src": "/img/fleet/carnival-front.webp",
+   "alt": "Kia Carnival màu đen của HTH",
+   "altEn": "HTH’s black Kia Carnival",
+   "width": 1447,
+   "height": 1087
+  },
+  {
+   "src": "/img/fleet/carnival-lobby.webp",
+   "alt": "Kia Carnival đỗ trước sảnh tòa nhà",
+   "altEn": "The Kia Carnival outside a building lobby",
+   "width": 1446,
+   "height": 1087
+  },
+  {
+   "src": "/img/fleet/carnival-recline.webp",
+   "alt": "Hành khách ngả ghế thương gia hàng hai Kia Carnival",
+   "altEn": "A passenger reclined in the Kia Carnival’s second-row captain seat",
+   "width": 1498,
+   "height": 1050
+  },
+  {
+   "src": "/img/fleet/carnival-dash.webp",
+   "alt": "Bảng điều khiển Kia Carnival với logo HTH trên màn hình",
+   "altEn": "Kia Carnival dashboard with the HTH logo on screen",
+   "width": 1672,
+   "height": 941
+  },
+  {
+   "src": "/img/fleet/carnival-boot.webp",
+   "alt": "Hàng ghế sau gập phẳng, chất vali trong Kia Carnival",
+   "altEn": "Rear seats folded flat with cases loaded in the Kia Carnival",
+   "width": 1920,
+   "height": 1385
+  }
+ ],
+ "hyundai-universe-45-cho": [
+  {
+   "src": "/img/fleet/universe-dealership.webp",
+   "alt": "Xe khách Hyundai Universe 45 chỗ của HTH trước đại lý Hyundai",
+   "altEn": "An HTH Hyundai Universe 45-seat coach at a Hyundai dealership",
+   "width": 1446,
+   "height": 1087
+  },
+  {
+   "src": "/img/fleet/universe-terminal.webp",
+   "alt": "Đội xe Universe của HTH xếp hàng trước nhà ga",
+   "altEn": "A row of HTH Universe coaches outside a terminal",
+   "width": 1671,
+   "height": 941
+  },
+  {
+   "src": "/img/fleet/universe-lineup.webp",
+   "alt": "Năm xe khách HTH xếp hàng trên phố",
+   "altEn": "Five HTH coaches lined up in the city",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "src": "/img/fleet/universe-roadside.webp",
+   "alt": "Hai xe khách Universe của HTH trên đường hàng cây",
+   "altEn": "Two HTH Universe coaches on a tree-lined road",
+   "width": 1450,
+   "height": 1085
+  },
+  {
+   "src": "/img/fleet/universe-front.webp",
+   "alt": "Xe khách Universe của HTH nhìn từ phía trước",
+   "altEn": "An HTH Universe coach from the front",
+   "width": 1087,
+   "height": 1447
+  },
+  {
+   "src": "/img/fleet/universe-cabin-day.webp",
+   "alt": "Khoang khách Universe với ghế da hai tông màu và rèm cửa",
+   "altEn": "The Universe cabin: two-tone leather seats and curtains",
+   "width": 1664,
+   "height": 928
+  },
+  {
+   "src": "/img/fleet/universe-cabin-evening.webp",
+   "alt": "Khoang khách Universe buổi tối dưới đèn trần ấm",
+   "altEn": "The Universe cabin at night under warm ceiling light",
+   "width": 1681,
+   "height": 935
+  }
+ ]
+}

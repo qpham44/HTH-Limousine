@@ -1,0 +1,447 @@
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+/* Hero ---------------------------------------------------------------------
+   Full-bleed photograph, gradient scrim, copy and the booking panel both
+   sitting on the picture — the HTH Limousine.dc.html treatment.
+   -------------------------------------------------------------------------- */
+
+.hero {
+  /* Wider than the text sections below, so the booking panel reads as a tool. */
+  --maxw: 1560px;
+  position: relative;
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: clamp(96px, 13vw, 140px);
+  overflow: hidden;
+}
+
+.heroBg { position: absolute; inset: 0; z-index: 0; }
+.heroBg img { object-fit: cover; object-position: 50% 42%; }
+
+/* The two dc.html scrims: a vertical fade so the header and the booking panel
+   both land on dark, plus a radial pool bottom-left so light copy never sits
+   on a bright patch of sky or metal roofing. */
+.heroScrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 7, 8, 0.62) 0%,
+    rgba(10, 7, 8, 0.18) 26%,
+    rgba(10, 7, 8, 0.3) 58%,
+    rgba(10, 7, 8, 0.86) 88%,
+    #0a0708 100%
+  );
+}
+.heroScrimCorner {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(
+    120% 92% at 0% 90%,
+    rgba(10, 7, 8, 0.9) 0%,
+    rgba(10, 7, 8, 0.55) 42%,
+    rgba(10, 7, 8, 0) 74%
+  );
+}
+
+.heroCopy {
+  position: relative;
+  z-index: 2;
+  padding-bottom: clamp(24px, 3vw, 40px);
+}
+/* Left edge shared with the booking panel below. */
+.heroText { display: flex; flex-direction: column; gap: 22px; max-width: 720px; }
+.heroTitle { font-size: clamp(2.1rem, 4.4vw, 3.25rem); max-width: none; color: #FFFFFF; }
+.heroLead {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #FFFFFF;
+  max-width: 560px;
+}
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+}
+.heroMeta span { display: inline-flex; align-items: center; gap: 9px; }
+.heroMeta span::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.heroBooking { position: relative; z-index: 2; }
+
+@media (max-width: 900px) {
+  .hero { min-height: 0; padding-top: clamp(88px, 20vw, 116px); }
+  .heroCopy { padding-bottom: clamp(28px, 6vw, 40px); }
+}
+
+/* Assurances ---------------------------------------------------------------
+   Four plain statements on hairlines. Deliberately not a row of giant numbers.
+   -------------------------------------------------------------------------- */
+
+.assure {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.assureItem { padding: 30px 26px 32px 0; }
+.assureItem + .assureItem { padding-left: 26px; border-left: 1px solid var(--rule); }
+.assureItem h3 { font-size: 15.5px; font-weight: 600; line-height: 1.5; margin-bottom: 8px; }
+.assureItem p { font-size: 14px; line-height: 1.7; color: var(--ink-3); }
+
+@media (max-width: 880px) {
+  .assure { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .assureItem:nth-child(3) { border-left: none; padding-left: 0; }
+  .assureItem:nth-child(3), .assureItem:nth-child(4) { border-top: 1px solid var(--rule); }
+}
+@media (max-width: 520px) {
+  .assure { grid-template-columns: 1fr; }
+  .assureItem { padding: 24px 0; border-left: none !important; padding-left: 0 !important; }
+  .assureItem + .assureItem { border-top: 1px solid var(--rule); }
+}
+
+/* Fleet --------------------------------------------------------------------- */
+
+.fleet {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 3.4vw, 44px) clamp(22px, 2.6vw, 34px);
+}
+@media (max-width: 1000px) { .fleet { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px)  { .fleet { grid-template-columns: 1fr; } }
+
+.card { display: flex; flex-direction: column; gap: 16px; }
+.cardMedia {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--ground-alt);
+}
+.cardMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.card:hover .cardMedia img { transform: scale(1.028); }
+
+.cardName { font-size: 1.22rem; line-height: 1.4; }
+.cardBlurb { font-size: 14.5px; line-height: 1.7; color: var(--ink-3); flex: 1; }
+.cardFoot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 13px;
+  border-top: 1px solid var(--rule);
+}
+.cardPrice { font-size: 15.5px; font-variant-numeric: tabular-nums; }
+.cardPrice small { font-size: 12.5px; color: var(--ink-3); }
+
+/* D'Car — the one deliberate dark passage ------------------------------------ */
+
+.dcar { position: relative; overflow: hidden; }
+.dcarMedia { position: absolute; inset: 0; }
+.dcarMedia img { width: 100%; height: 100%; object-fit: cover; }
+.dcarVeil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(5, 4, 3, 0.95) 0%, rgba(5, 4, 3, 0.82) 46%, rgba(5, 4, 3, 0.45) 100%);
+}
+.dcarInner { position: relative; max-width: 40rem; display: flex; flex-direction: column; gap: 22px; }
+.dcarInner p { color: var(--ivory-2); font-size: 1.0625rem; line-height: 1.8; }
+
+/* Rates ---------------------------------------------------------------------- */
+
+.rateTableWrap { overflow-x: auto; border: 1px solid var(--rule); background: var(--ground); }
+.rateTable { width: 100%; min-width: 720px; border-collapse: collapse; }
+.rateTable th, .rateTable td {
+  padding: 15px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+.rateTable thead th {
+  background: var(--ground-alt);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.rateTable tbody tr:last-child td { border-bottom: none; }
+.rateTable tbody tr:hover td,
+.rateTable tbody tr:hover th { background: var(--ground-alt); }
+.rateTable td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 14.5px;
+}
+.rateRoute { font-size: 15px; white-space: normal; min-width: 15rem; }
+.rateDur { font-size: 13px; color: var(--ink-3); }
+.rateNote { margin-top: 18px; font-size: 13.5px; line-height: 1.75; color: var(--ink-3); max-width: 52rem; }
+
+/* About ---------------------------------------------------------------------- */
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  gap: clamp(36px, 5.5vw, 76px);
+  align-items: center;
+}
+@media (max-width: 900px) { .about { grid-template-columns: 1fr; } }
+
+.aboutPoints { display: flex; flex-direction: column; gap: 24px; margin-top: 8px; }
+.point { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 18px; }
+.pointTitle {
+  grid-column: 2;
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+}
+.point p { grid-column: 2; font-size: 14.5px; line-height: 1.75; color: var(--ink-3); }
+.pointRule {
+  grid-row: span 2;
+  width: 1px;
+  background: var(--gold);
+  opacity: 0.55;
+  margin-top: 6px;
+}
+
+.aboutMedia { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.aboutMedia figure { margin: 0; overflow: hidden; }
+.aboutMedia img { width: 100%; height: 100%; object-fit: cover; }
+.aboutWide { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+.aboutSquare { aspect-ratio: 4 / 3; }
+
+/* Clients --------------------------------------------------------------------- */
+
+.clients { border-top: 1px solid var(--rule); }
+.client {
+  display: grid;
+  grid-template-columns: minmax(0, 14rem) minmax(0, 1fr);
+  gap: 4px 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.clientName { font-size: 1.15rem; font-weight: 600; line-height: 1.45; }
+.clientWhat { font-size: 14.5px; line-height: 1.7; color: var(--ink-3); }
+@media (max-width: 640px) { .client { grid-template-columns: 1fr; } }
+
+/* Contact ---------------------------------------------------------------------- */
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(36px, 5vw, 72px);
+}
+@media (max-width: 900px) { .contact { grid-template-columns: 1fr; } }
+
+.detail {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 6px 22px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.detail:last-of-type { border-bottom: none; }
+.detailKey {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.detailPhone {
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gold-deep);
+  font-variant-numeric: tabular-nums;
+}
+.detailValue { font-size: 15.5px; line-height: 1.7; }
+.channels { display: flex; flex-wrap: wrap; gap: 9px; }
+.channel {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 17px;
+  border: 1px solid var(--rule-2);
+  border-radius: 2px;
+  font-size: 13.5px;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.channel:hover { border-color: var(--gold-ink); color: var(--gold-deep); }
+@media (max-width: 480px) { .detail { grid-template-columns: 1fr; } }
+
+.officeCard {
+  border: 1px solid var(--rule);
+  background: var(--ground-alt);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.officeMap { position: relative; flex: 1; min-height: 320px; background: #0B0908; }
+.officeFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 24px 26px;
+  border-top: 1px solid var(--rule);
+}
+
+/* Hero figures ----------------------------------------------------------------
+   Three numbers under the lead, counted up once on arrival (CountUp).
+   -------------------------------------------------------------------------- */
+
+.heroStats {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  gap: 0;
+  margin: 4px 0 0;
+}
+.heroStat {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 6px;
+  padding: 2px 34px 2px 0;
+}
+.heroStat + .heroStat { padding-left: 34px; border-left: 1px solid rgba(214, 158, 74, 0.6); }
+.heroStat dd {
+  margin: 0;
+  font-size: clamp(2rem, 3.6vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.heroStatSuffix { color: var(--gold-deep); margin-left: 2px; }
+.heroStat dt {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+.heroStatsNote {
+  max-width: 560px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 520px) {
+  .heroStat { padding-right: 16px; }
+  .heroStat + .heroStat { padding-left: 16px; }
+  .heroStat dt { font-size: 9.5px; letter-spacing: 0.1em; min-height: 3.1em; }
+}
+
+/* Fleet heading: second clause lighter */
+.h2Second { display: block; font-weight: 400; color: var(--ink-2); }
+
+/* About HTH -------------------------------------------------------------------- */
+
+.story { overflow: hidden; }
+.storyGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(36px, 6vw, 88px);
+  align-items: start;
+}
+.storyText { display: flex; flex-direction: column; gap: 22px; }
+.storyText h2 { max-width: 22ch; }
+.storyText p { color: var(--ivory-2); font-size: 1.0625rem; line-height: 1.85; }
+
+.storyFigure { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.storyPhoto { position: relative; overflow: hidden; aspect-ratio: 1238 / 1135; background: var(--dark-alt); }
+.storyPhoto img { width: 100%; height: 100%; object-fit: cover; }
+.storyCaption { font-size: 12.5px; color: var(--ink-3); }
+.storyQuote {
+  margin: 8px 0 0;
+  padding: 4px 0 4px 22px;
+  border-left: 2px solid var(--gold);
+}
+.storyQuote p { font-size: 1.05rem; line-height: 1.7; color: var(--ivory); }
+.storyQuote footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+.partners {
+  margin-top: clamp(48px, 7vw, 84px);
+  padding-block: 26px 30px;
+  border-block: 1px solid var(--rule-dark);
+}
+.partnersLabel { margin-bottom: 22px; }
+.marquee {
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.marqueeTrack {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: clamp(48px, 6vw, 88px);
+  margin: 0;
+  padding: 0 clamp(24px, 3vw, 44px);
+  list-style: none;
+  animation: marquee 46s linear infinite;
+}
+.marqueeTrack li { display: flex; align-items: center; height: 52px; opacity: 0.72; transition: opacity 0.2s ease; }
+.marqueeTrack img { display: block; max-width: none; }
+@media (hover: hover) and (pointer: fine) {
+  .marquee:hover .marqueeTrack { animation-play-state: paused; }
+  .marqueeTrack li:hover { opacity: 1; }
+}
+@keyframes marquee { to { transform: translateX(-100%); } }
+
+.storyClosing {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 46rem;
+  margin-top: clamp(40px, 6vw, 72px);
+}
+.storyClosing p { font-size: clamp(1.15rem, 1.8vw, 1.4rem); line-height: 1.6; color: var(--ivory); }
+
+@media (max-width: 900px) {
+  .storyGrid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee { -webkit-mask-image: none; mask-image: none; flex-wrap: wrap; justify-content: center; }
+  .marqueeTrack { animation: none; flex-wrap: wrap; justify-content: center; row-gap: 24px; }
+  .marqueeTrack[aria-hidden='true'] { display: none; }
+}

@@ -1,0 +1,244 @@
+.module {
+  background: var(--cream);
+  border: 1px solid var(--rule-2);
+  border-radius: 3px;
+  box-shadow: 0 18px 48px -34px rgba(27, 25, 22, 0.4);
+}
+
+/* Glass panel over a hero photograph — homepage only. */
+.overlay {
+  background: rgba(17, 17, 19, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(214, 158, 74, 0.22);
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  box-shadow: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 420px;
+}
+.overlay .grid { grid-template-columns: minmax(0, 1fr) 460px; }
+
+.form { padding: clamp(24px, 3vw, 40px); min-width: 0; container-type: inline-size; }
+
+.aside {
+  border-left: 1px solid var(--rule-2);
+  padding: clamp(24px, 3vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+@media (max-width: 1060px) {
+  .grid, .overlay .grid { grid-template-columns: 1fr; }
+  .aside { border-left: none; border-top: 1px solid var(--rule-2); }
+}
+
+/* Head --------------------------------------------------------------------- */
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.title { font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.4; }
+.headNote { font-size: 12.5px; line-height: 1.6; color: var(--ink-3); }
+
+/* Service tabs ------------------------------------------------------------- */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.tab {
+  min-height: 40px;
+  padding: 9px 16px;
+  background: transparent;
+  border: 1px solid var(--rule-2);
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.tab:hover { border-color: var(--gold-ink); color: var(--ink); }
+.tab[aria-pressed='true'] {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ground);
+}
+
+/* Fields ------------------------------------------------------------------- */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+  margin-bottom: 18px;
+}
+.row3 { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) auto; align-items: end; }
+@media (max-width: 720px) {
+  .row, .row3 { grid-template-columns: 1fr; }
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+
+.field input,
+.field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 2px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--rule-2);
+  border-radius: 0;
+  font-size: 15.5px;
+  color: var(--ink);
+  transition: border-color 0.18s ease;
+}
+.field select { cursor: pointer; }
+.field input:hover, .field select:hover { border-bottom-color: var(--ink-3); }
+.field input:focus-visible,
+.field select:focus-visible {
+  outline: none;
+  border-bottom-color: var(--gold-ink);
+  box-shadow: 0 1px 0 0 var(--gold-ink);
+}
+.field input::placeholder { color: var(--ink-3); }
+
+/* Wide form: when the column has room, every field flows into one six-column
+   grid, so the whole request fits in three rows instead of five. */
+@container (min-width: 820px) {
+  .form form {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 22px 26px;
+    align-items: end;
+  }
+  .form .row { display: contents; }
+  .c1 { grid-column: span 1; }
+  .c2 { grid-column: span 2; }
+  .form .error,
+  .form .consent { grid-column: 1 / -1; margin-top: 0; }
+}
+
+.submitCell { display: flex; align-items: flex-end; }
+.submitCell .btn { width: 100%; }
+.submitCell .btn[disabled] { opacity: 0.65; cursor: progress; }
+
+.consent { margin-top: 14px; font-size: 11.5px; line-height: 1.65; color: var(--ink-3); max-width: 62ch; }
+
+/* Spam trap: off-screen for people, still in the form for bots. */
+.trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.error {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #E2726A;
+}
+
+/* Aside — route, distance, estimate --------------------------------------- */
+
+/* English labels run longer than the Vietnamese, so let this wrap rather than
+   letting the status text collide with the heading. */
+.asideHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 14px;
+  flex-wrap: wrap;
+}
+.status { font-size: 11px; letter-spacing: 0.04em; color: var(--ink-3); text-align: right; }
+
+.mapBox {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #0B0908;
+  border: 1px solid var(--rule-2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.overlay .mapBox { aspect-ratio: 16 / 10; }
+@media (max-width: 1060px) {
+  .mapBox, .overlay .mapBox { aspect-ratio: 16 / 9; max-height: 300px; }
+}
+
+.mapHint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 18px;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(10, 7, 8, 0.94) 0%, rgba(10, 7, 8, 0) 62%);
+}
+.mapHint p { font-size: 12px; line-height: 1.65; color: var(--ink-2); max-width: 24ch; }
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--rule-2);
+  border-bottom: 1px solid var(--rule-2);
+}
+.metric { padding: 13px 16px 13px 0; }
+.metric + .metric { padding-left: 16px; border-left: 1px solid var(--rule); }
+.metricLabel {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 6px;
+}
+.metricValue {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+
+.quoteValue {
+  font-size: clamp(1.25rem, 1.9vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gold-deep);
+  font-variant-numeric: tabular-nums;
+}
+.quoteNote { margin-top: 8px; font-size: 11.5px; line-height: 1.65; color: var(--ink-3); }
+
+/* Sent state --------------------------------------------------------------- */
+
+.sent { display: flex; flex-direction: column; gap: 18px; }
+.sentTop { display: flex; gap: 18px; align-items: flex-start; }
+.tick {
+  flex: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--gold-ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-deep);
+}
+.sentSummary {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+.sentActions { display: flex; flex-wrap: wrap; gap: 10px; }

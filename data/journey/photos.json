@@ -1,0 +1,694 @@
+{
+ "source": "Lead images of Wikipedia articles, hosted on Wikimedia Commons under free licences.",
+ "photos": {
+  "saigon": {
+   "src": "/img/journey/photos/saigon.webp",
+   "file": "Ho_Chi_Minh_City,_City_Hall,_2020-01_CN-02.jpg",
+   "author": "Steffen Schmitz (more photos)",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City,_City_Hall,_2020-01_CN-02.jpg",
+   "article": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City_Hall",
+   "wide": "/img/journey/photos/saigon-wide.webp"
+  },
+  "cu-chi": {
+   "src": "/img/journey/photos/cu-chi.webp",
+   "file": "Củ_Chi_tunnels_entrance.JPG",
+   "author": "Lars Curfs (Grashoofd)",
+   "license": "CC BY-SA 3.0 nl",
+   "page": "https://commons.wikimedia.org/wiki/File:C%E1%BB%A7_Chi_tunnels_entrance.JPG",
+   "article": "https://en.wikipedia.org/wiki/C%E1%BB%A7_Chi_tunnels",
+   "wide": "/img/journey/photos/cu-chi-wide.webp"
+  },
+  "binh-duong": {
+   "src": "/img/journey/photos/binh-duong.webp",
+   "file": "Đại_Nam_cổng_chào_1.JPG",
+   "author": "Phương Huy at Vietnamese Wikipedia",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BA%A1i_Nam_c%E1%BB%95ng_ch%C3%A0o_1.JPG",
+   "article": "https://vi.wikipedia.org/wiki/Khu_du_l%E1%BB%8Bch_%C4%90%E1%BA%A1i_Nam",
+   "wide": "/img/journey/photos/binh-duong-wide.webp"
+  },
+  "bien-hoa": {
+   "src": "/img/journey/photos/bien-hoa.webp",
+   "file": "Nhà_thờ_chính_Văn_miếu_Trấn_Biên.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nh%C3%A0_th%E1%BB%9D_ch%C3%ADnh_V%C4%83n_mi%E1%BA%BFu_Tr%E1%BA%A5n_Bi%C3%AAn.jpg",
+   "article": "https://vi.wikipedia.org/wiki/V%C4%83n_mi%E1%BA%BFu_Tr%E1%BA%A5n_Bi%C3%AAn",
+   "wide": "/img/journey/photos/bien-hoa-wide.webp"
+  },
+  "nhon-trach": {
+   "src": "/img/journey/photos/nhon-trach.webp",
+   "file": "Tt._Hiệp_Phước,_Nhơn_Trạch,_Đồng_Nai,_Vietnam_-_panoramio_(1).jpg",
+   "author": "Lam Tr Th",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tt._Hi%E1%BB%87p_Ph%C6%B0%E1%BB%9Bc,_Nh%C6%A1n_Tr%E1%BA%A1ch,_%C4%90%E1%BB%93ng_Nai,_Vietnam_-_panoramio_(1).jpg",
+   "article": "https://en.wikipedia.org/wiki/Nh%C6%A1n_Tr%E1%BA%A1ch_district",
+   "wide": "/img/journey/photos/nhon-trach-wide.webp"
+  },
+  "long-thanh": {
+   "src": "/img/journey/photos/long-thanh.webp",
+   "file": "Dji-0031-2479-7509-26233946999421542541397.jpg",
+   "author": "Hehebisbis",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dji-0031-2479-7509-26233946999421542541397.jpg",
+   "article": "https://en.wikipedia.org/wiki/Long_Th%C3%A0nh_International_Airport",
+   "wide": "/img/journey/photos/long-thanh-wide.webp"
+  },
+  "can-gio": {
+   "src": "/img/journey/photos/can-gio.webp",
+   "file": "Lo_ren_river.jpg",
+   "author": "Tho nau",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lo_ren_river.jpg",
+   "article": "https://vi.wikipedia.org/wiki/R%E1%BB%ABng_S%C3%A1c",
+   "wide": "/img/journey/photos/can-gio-wide.webp"
+  },
+  "tay-ninh": {
+   "src": "/img/journey/photos/tay-ninh.webp",
+   "file": "Dau_Tieng_Lake_-_50766650163.png",
+   "author": "Cuong Tran",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Dau_Tieng_Lake_-_50766650163.png",
+   "article": "https://en.wikipedia.org/wiki/B%C3%A0_%C4%90en_Mountain",
+   "wide": "/img/journey/photos/tay-ninh-wide.webp"
+  },
+  "vung-tau": {
+   "src": "/img/journey/photos/vung-tau.webp",
+   "file": "Nhìn_toàn_cảnh_TP.VŨNG_TÀU_từ_Cáp_treo_Vũng_Tàu.jpg",
+   "author": "Luci nguyễn",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nh%C3%ACn_to%C3%A0n_c%E1%BA%A3nh_TP.V%C5%A8NG_T%C3%80U_t%E1%BB%AB_C%C3%A1p_treo_V%C5%A9ng_T%C3%A0u.jpg",
+   "article": "https://en.wikipedia.org/wiki/V%C5%A9ng_T%C3%A0u",
+   "wide": "/img/journey/photos/vung-tau-wide.webp"
+  },
+  "long-hai": {
+   "src": "/img/journey/photos/long-hai.webp",
+   "file": "Dinh_Cô_(toàn_cảnh).jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dinh_C%C3%B4_(to%C3%A0n_c%E1%BA%A3nh).jpg",
+   "article": "https://vi.wikipedia.org/wiki/Dinh_C%C3%B4_%28Long_H%E1%BA%A3i%29",
+   "wide": "/img/journey/photos/long-hai-wide.webp"
+  },
+  "ho-tram": {
+   "src": "/img/journey/photos/ho-tram.webp",
+   "file": "Ho_Tram_Beach.jpg",
+   "author": "User:DynastyHoTram",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ho_Tram_Beach.jpg",
+   "article": "https://vi.wikipedia.org/wiki/H%E1%BB%93_Tr%C3%A0m",
+   "wide": "/img/journey/photos/ho-tram-wide.webp"
+  },
+  "binh-chau": {
+   "src": "/img/journey/photos/binh-chau.webp",
+   "file": "Suối_khoáng_nóng_Bình_Châu.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Su%E1%BB%91i_kho%C3%A1ng_n%C3%B3ng_B%C3%ACnh_Ch%C3%A2u.jpg",
+   "article": "",
+   "wide": "/img/journey/photos/binh-chau-wide.webp"
+  },
+  "phan-thiet": {
+   "src": "/img/journey/photos/phan-thiet.webp",
+   "file": "Tháp_nước_phan_thiết_về_đêm.jpg",
+   "author": "Luongvanquyphuoc2005",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Th%C3%A1p_n%C6%B0%E1%BB%9Bc_phan_thi%E1%BA%BFt_v%E1%BB%81_%C4%91%C3%AAm.jpg",
+   "article": "https://en.wikipedia.org/wiki/Phan_Thi%E1%BA%BFt",
+   "wide": "/img/journey/photos/phan-thiet-wide.webp"
+  },
+  "mui-ne": {
+   "src": "/img/journey/photos/mui-ne.webp",
+   "file": "Mui_Ne2.jpg",
+   "author": "MikeRussia",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mui_Ne2.jpg",
+   "article": "https://en.wikipedia.org/wiki/M%C5%A9i_N%C3%A9",
+   "wide": "/img/journey/photos/mui-ne-wide.webp"
+  },
+  "phan-rang": {
+   "src": "/img/journey/photos/phan-rang.webp",
+   "file": "Angkor_Thom_Bayon_57.jpg",
+   "author": "Olaf Tausch",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Angkor_Thom_Bayon_57.jpg",
+   "article": "https://en.wikipedia.org/wiki/Po_Klong_Garai",
+   "wide": "/img/journey/photos/phan-rang-wide.webp"
+  },
+  "nha-trang": {
+   "src": "/img/journey/photos/nha-trang.webp",
+   "file": "Nha_Trang_,_Vietnam_-_panoramio_(35).jpg",
+   "author": "Kaz Ish",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nha_Trang_,_Vietnam_-_panoramio_(35).jpg",
+   "article": "https://en.wikipedia.org/wiki/Nha_Trang",
+   "wide": "/img/journey/photos/nha-trang-wide.webp"
+  },
+  "bao-loc": {
+   "src": "/img/journey/photos/bao-loc.webp",
+   "file": "Công_viên_Bảo_Lộc.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:C%C3%B4ng_vi%C3%AAn_B%E1%BA%A3o_L%E1%BB%99c.jpg",
+   "article": "https://en.wikipedia.org/wiki/B%E1%BA%A3o_L%E1%BB%99c",
+   "wide": "/img/journey/photos/bao-loc-wide.webp"
+  },
+  "da-lat": {
+   "src": "/img/journey/photos/da-lat.webp",
+   "file": "Xuan_Huong_Lake_11.jpg",
+   "author": "Diane Selwyn",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Xuan_Huong_Lake_11.jpg",
+   "article": "https://en.wikipedia.org/wiki/Da_Lat",
+   "wide": "/img/journey/photos/da-lat-wide.webp"
+  },
+  "my-tho": {
+   "src": "/img/journey/photos/my-tho.webp",
+   "file": "Xoài_Mút_river,_Phước_Thạnh_commune,_Mỹ_Tho,_Tiền_Giang,_Vietnam,_at_February-2022,_photo_2.jpg",
+   "author": "Khả Vân Đại Hãn",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Xo%C3%A0i_M%C3%BAt_river,_Ph%C6%B0%E1%BB%9Bc_Th%E1%BA%A1nh_commune,_M%E1%BB%B9_Tho,_Ti%E1%BB%81n_Giang,_Vietnam,_at_February-2022,_photo_2.jpg",
+   "article": "",
+   "wide": "/img/journey/photos/my-tho-wide.webp"
+  },
+  "ben-tre": {
+   "src": "/img/journey/photos/ben-tre.webp",
+   "file": "Ham_Luong_River_from_Ham_Luong_Bridge.jpg",
+   "author": "Magicknight94",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ham_Luong_River_from_Ham_Luong_Bridge.jpg",
+   "article": "https://en.wikipedia.org/wiki/B%E1%BA%BFn_Tre",
+   "wide": "/img/journey/photos/ben-tre-wide.webp"
+  },
+  "vinh-long": {
+   "src": "/img/journey/photos/vinh-long.webp",
+   "file": "Vĩnh_Long_bên_sông_Cổ_Chiên.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:V%C4%A9nh_Long_b%C3%AAn_s%C3%B4ng_C%E1%BB%95_Chi%C3%AAn.jpg",
+   "article": "",
+   "wide": "/img/journey/photos/vinh-long-wide.webp"
+  },
+  "can-tho": {
+   "src": "/img/journey/photos/can-tho.webp",
+   "file": "Can-tho-tuonglamphotos.jpg",
+   "author": "[//commons.wikimedia.org/wiki/User:Trantuonglam Trantuonglam]",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Can-tho-tuonglamphotos.jpg",
+   "article": "https://en.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1",
+   "wide": "/img/journey/photos/can-tho-wide.webp"
+  },
+  "chau-doc": {
+   "src": "/img/journey/photos/chau-doc.webp",
+   "file": "Mieuba2.jpg",
+   "author": "Bùi Thuỵ Đào Nguyên (thảo luận)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Mieuba2.jpg",
+   "article": "https://vi.wikipedia.org/wiki/Mi%E1%BA%BFu_B%C3%A0_Ch%C3%BAa_X%E1%BB%A9_N%C3%BAi_Sam",
+   "wide": "/img/journey/photos/chau-doc-wide.webp"
+  },
+  "rach-gia": {
+   "src": "/img/journey/photos/rach-gia.webp",
+   "file": "Chùa_Sắc_Tứ_Tam_Bảo_RG.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_S%E1%BA%AFc_T%E1%BB%A9_Tam_B%E1%BA%A3o_RG.jpg",
+   "article": "https://en.wikipedia.org/wiki/R%E1%BA%A1ch_Gi%C3%A1",
+   "wide": "/img/journey/photos/rach-gia-wide.webp"
+  },
+  "ca-mau": {
+   "src": "/img/journey/photos/ca-mau.webp",
+   "file": "Tuongdaimuicamau.jpg",
+   "author": "Thanhminh2000",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tuongdaimuicamau.jpg",
+   "article": "https://vi.wikipedia.org/wiki/M%C5%A9i_C%C3%A0_Mau",
+   "wide": "/img/journey/photos/ca-mau-wide.webp"
+  },
+  "dinh-doc-lap": {
+   "src": "/img/journey/photos/dinh-doc-lap.webp",
+   "file": "20190923_Independence_Palace-10.jpg",
+   "author": "Balon Greyjoy",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:20190923_Independence_Palace-10.jpg",
+   "article": "https://en.wikipedia.org/wiki/Independence_Palace"
+  },
+  "nha-tho-duc-ba": {
+   "src": "/img/journey/photos/nha-tho-duc-ba.webp",
+   "file": "Notre_dame_saigon.jpg",
+   "author": "Kevin1243",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Notre_dame_saigon.jpg",
+   "article": "https://en.wikipedia.org/wiki/Notre-Dame_Cathedral_Basilica_of_Saigon"
+  },
+  "cho-ben-thanh": {
+   "src": "/img/journey/photos/cho-ben-thanh.webp",
+   "file": "Ben_Thanh,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.JPG",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ben_Thanh,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_01.JPG",
+   "article": "https://en.wikipedia.org/wiki/B%E1%BA%BFn_Th%C3%A0nh_Market"
+  },
+  "landmark-81": {
+   "src": "/img/journey/photos/landmark-81.webp",
+   "file": "Ho_Chi_Minh_City_panorama_2019_(cropped).jpg",
+   "author": "Lê Minh Phát",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_panorama_2019_(cropped).jpg",
+   "article": "https://en.wikipedia.org/wiki/Landmark_81"
+  },
+  "tan-son-nhat": {
+   "src": "/img/journey/photos/tan-son-nhat.webp",
+   "file": "Tan_Son_Nhat_ramp_(08.2026).jpg",
+   "author": "Hwi.padam",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tan_Son_Nhat_ramp_(08.2026).jpg",
+   "article": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport"
+  },
+  "long-thanh-airport": {
+   "src": "/img/journey/photos/long-thanh-airport.webp",
+   "file": "Dji-0031-2479-7509-26233946999421542541397.jpg",
+   "author": "Hehebisbis",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dji-0031-2479-7509-26233946999421542541397.jpg",
+   "article": "https://en.wikipedia.org/wiki/Long_Th%C3%A0nh_International_Airport"
+  },
+  "lien-khuong": {
+   "src": "/img/journey/photos/lien-khuong.webp",
+   "file": "Lien_Khuong_Airport_01.jpg",
+   "author": "Diane Selwyn",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Lien_Khuong_Airport_01.jpg",
+   "article": "https://en.wikipedia.org/wiki/Lien_Khuong_International_Airport"
+  },
+  "cam-ranh": {
+   "src": "/img/journey/photos/cam-ranh.webp",
+   "file": "Cam_Ranh_International_Terminal.jpg",
+   "author": "Ed Crystal",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cam_Ranh_International_Terminal.jpg",
+   "article": "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport"
+  },
+  "can-tho-airport": {
+   "src": "/img/journey/photos/can-tho-airport.webp",
+   "file": "Can_Tho_Airport1.JPG",
+   "author": "Genghiskhan",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Can_Tho_Airport1.JPG",
+   "article": "https://en.wikipedia.org/wiki/Can_Tho_International_Airport"
+  },
+  "ben-duoc": {
+   "src": "/img/journey/photos/ben-duoc.webp",
+   "file": "W_Củ_Chi_Địa_đạo_Củ_Chi_ngụy_trang.JPG",
+   "author": "Phương Huy (thảo luận)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:W_C%E1%BB%A7_Chi_%C4%90%E1%BB%8Ba_%C4%91%E1%BA%A1o_C%E1%BB%A7_Chi_ng%E1%BB%A5y_trang.JPG",
+   "article": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_%C4%91%E1%BA%A1o_B%E1%BA%BFn_D%C6%B0%E1%BB%A3c"
+  },
+  "ben-dinh": {
+   "src": "/img/journey/photos/ben-dinh.webp",
+   "file": "W_Củ_Chi_Địa_đạo_Củ_Chi_ngụy_trang.JPG",
+   "author": "Phương Huy (thảo luận)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:W_C%E1%BB%A7_Chi_%C4%90%E1%BB%8Ba_%C4%91%E1%BA%A1o_C%E1%BB%A7_Chi_ng%E1%BB%A5y_trang.JPG",
+   "article": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_%C4%91%E1%BA%A1o_B%E1%BA%BFn_%C4%90%C3%ACnh"
+  },
+  "dai-nam": {
+   "src": "/img/journey/photos/dai-nam.webp",
+   "file": "Đại_Nam_cổng_chào_1.JPG",
+   "author": "Phương Huy at Vietnamese Wikipedia",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BA%A1i_Nam_c%E1%BB%95ng_ch%C3%A0o_1.JPG",
+   "article": "https://vi.wikipedia.org/wiki/Khu_du_l%E1%BB%8Bch_%C4%90%E1%BA%A1i_Nam"
+  },
+  "van-mieu-tran-bien": {
+   "src": "/img/journey/photos/van-mieu-tran-bien.webp",
+   "file": "Nhà_thờ_chính_Văn_miếu_Trấn_Biên.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nh%C3%A0_th%E1%BB%9D_ch%C3%ADnh_V%C4%83n_mi%E1%BA%BFu_Tr%E1%BA%A5n_Bi%C3%AAn.jpg",
+   "article": "https://vi.wikipedia.org/wiki/V%C4%83n_mi%E1%BA%BFu_Tr%E1%BA%A5n_Bi%C3%AAn"
+  },
+  "buu-long": {
+   "src": "/img/journey/photos/buu-long.webp",
+   "file": "Hồ_Long_Ẩn_-_10398247865.jpg",
+   "author": "Bem photography:",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:H%E1%BB%93_Long_%E1%BA%A8n_-_10398247865.jpg",
+   "article": "https://vi.wikipedia.org/wiki/Khu_du_l%E1%BB%8Bch_B%E1%BB%ADu_Long"
+  },
+  "tan-lap": {
+   "src": "/img/journey/photos/tan-lap.webp",
+   "file": "Tháp_Quan_Sát.jpg",
+   "author": "1814lbt",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Th%C3%A1p_Quan_S%C3%A1t.jpg",
+   "article": ""
+  },
+  "vam-sat": {
+   "src": "/img/journey/photos/vam-sat.webp",
+   "file": "Bat_swamp_in_Vam_Sat.jpg",
+   "author": "Tho nau",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bat_swamp_in_Vam_Sat.jpg",
+   "article": "https://vi.wikipedia.org/wiki/Khu_du_l%E1%BB%8Bch_sinh_th%C3%A1i_V%C3%A0m_S%C3%A1t"
+  },
+  "toa-thanh": {
+   "src": "/img/journey/photos/toa-thanh.webp",
+   "file": "Cao_Dai_Holy_See_(10037404444).jpg",
+   "author": "Gary Todd from Xinzheng, China",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cao_Dai_Holy_See_(10037404444).jpg",
+   "article": "https://en.wikipedia.org/wiki/T%C3%A2y_Ninh_Holy_See"
+  },
+  "trang-bang": {
+   "src": "/img/journey/photos/trang-bang.webp",
+   "file": "Banh-Canh-Noodle-Soup.jpg",
+   "author": "Kham Tran - www.khamtran.com",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Banh-Canh-Noodle-Soup.jpg",
+   "article": "https://vi.wikipedia.org/wiki/B%C3%A1nh_canh_Tr%E1%BA%A3ng_B%C3%A0ng"
+  },
+  "sun-world-ba-den": {
+   "src": "/img/journey/photos/sun-world-ba-den.webp",
+   "file": "Dau_Tieng_Lake_-_50766650163.png",
+   "author": "Cuong Tran",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Dau_Tieng_Lake_-_50766650163.png",
+   "article": "https://vi.wikipedia.org/wiki/N%C3%BAi_B%C3%A0_%C4%90en"
+  },
+  "chua-kito": {
+   "src": "/img/journey/photos/chua-kito.webp",
+   "file": "Statue_of_Jesus_in_Vung_Tau.jpg",
+   "author": "Chris Phan from Eugene, Oregon, United States",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Jesus_in_Vung_Tau.jpg",
+   "article": "https://en.wikipedia.org/wiki/Christ_of_V%C5%A9ng_T%C3%A0u"
+  },
+  "hai-dang-vung-tau": {
+   "src": "/img/journey/photos/hai-dang-vung-tau.webp",
+   "file": "Hải_đăng_Vũng_Tàu.JPG",
+   "author": "Hoangvantoanajc",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:H%E1%BA%A3i_%C4%91%C4%83ng_V%C5%A9ng_T%C3%A0u.JPG",
+   "article": "https://vi.wikipedia.org/wiki/H%E1%BA%A3i_%C4%91%C4%83ng_V%C5%A9ng_T%C3%A0u"
+  },
+  "bai-sau": {
+   "src": "/img/journey/photos/bai-sau.webp",
+   "file": "Bãi_sau,_Vũng_Tàu,_02_2014.JPG",
+   "author": "Prenn",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:B%C3%A3i_sau,_V%C5%A9ng_T%C3%A0u,_02_2014.JPG",
+   "article": "https://vi.wikipedia.org/wiki/B%C3%A3i_Sau"
+  },
+  "dinh-co": {
+   "src": "/img/journey/photos/dinh-co.webp",
+   "file": "Dinh_Cô_(toàn_cảnh).jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dinh_C%C3%B4_(to%C3%A0n_c%E1%BA%A3nh).jpg",
+   "article": "https://vi.wikipedia.org/wiki/Dinh_C%C3%B4_%28Long_H%E1%BA%A3i%29"
+  },
+  "minh-dam": {
+   "src": "/img/journey/photos/minh-dam.webp",
+   "file": "Mũi_núi_núi_minh_đạm_long_hải_-_panoramio.jpg",
+   "author": "Lam Tr Th",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:M%C5%A9i_n%C3%BAi_n%C3%BAi_minh_%C4%91%E1%BA%A1m_long_h%E1%BA%A3i_-_panoramio.jpg",
+   "article": "https://vi.wikipedia.org/wiki/N%C3%BAi_Minh_%C4%90%E1%BA%A1m"
+  },
+  "suoi-khoang-binh-chau": {
+   "src": "/img/journey/photos/suoi-khoang-binh-chau.webp",
+   "file": "Suối_khoáng_nóng_Bình_Châu.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Su%E1%BB%91i_kho%C3%A1ng_n%C3%B3ng_B%C3%ACnh_Ch%C3%A2u.jpg",
+   "article": ""
+  },
+  "ho-coc": {
+   "src": "/img/journey/photos/ho-coc.webp",
+   "file": "Ho_coc_beach_.jpg",
+   "author": "User:DynastyHoTram",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ho_coc_beach_.jpg",
+   "article": "https://vi.wikipedia.org/wiki/H%E1%BB%93_C%E1%BB%91c"
+  },
+  "ke-ga": {
+   "src": "/img/journey/photos/ke-ga.webp",
+   "file": "Hải_đăng_Khe_Gà.PNG",
+   "author": "vi:User:Trần Thế Vinh",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:H%E1%BA%A3i_%C4%91%C4%83ng_Khe_G%C3%A0.PNG",
+   "article": "https://vi.wikipedia.org/wiki/H%E1%BA%A3i_%C4%91%C4%83ng_K%C3%AA_G%C3%A0"
+  },
+  "po-sah-inu": {
+   "src": "/img/journey/photos/po-sah-inu.webp",
+   "file": "Tháp_Po_Sah_Inu,_Phan_Thiết,_Bình_Thuận.JPG",
+   "author": "Dongson*vmvn at Vietnamese Wikipedia",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Th%C3%A1p_Po_Sah_Inu,_Phan_Thi%E1%BA%BFt,_B%C3%ACnh_Thu%E1%BA%ADn.JPG",
+   "article": ""
+  },
+  "bau-trang": {
+   "src": "/img/journey/photos/bau-trang.webp",
+   "file": "Bàu_Trắng_(28680306740).jpg",
+   "author": "Hưng Hồ Bá from 08 Bạch Đằng TP Huế, Việt Nam",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:B%C3%A0u_Tr%E1%BA%AFng_(28680306740).jpg",
+   "article": "https://vi.wikipedia.org/wiki/B%C3%A0u_Tr%E1%BA%AFng"
+  },
+  "suoi-tien": {
+   "src": "/img/journey/photos/suoi-tien.webp",
+   "file": "Fairy_Stream_(Mui_Ne).jpg",
+   "author": "Darren On The Road",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fairy_Stream_(Mui_Ne).jpg",
+   "article": "https://vi.wikipedia.org/wiki/Su%E1%BB%91i_Ti%C3%AAn_%28M%C5%A9i_N%C3%A9%29"
+  },
+  "po-klong-garai": {
+   "src": "/img/journey/photos/po-klong-garai.webp",
+   "file": "Angkor_Thom_Bayon_57.jpg",
+   "author": "Olaf Tausch",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Angkor_Thom_Bayon_57.jpg",
+   "article": "https://en.wikipedia.org/wiki/Po_Klong_Garai"
+  },
+  "vinh-hy": {
+   "src": "/img/journey/photos/vinh-hy.webp",
+   "file": "Vinh_hy_bay.jpg",
+   "author": "Karel Bilek",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinh_hy_bay.jpg",
+   "article": "https://vi.wikipedia.org/wiki/V%E1%BB%8Bnh_V%C4%A9nh_Hy"
+  },
+  "hon-mun": {
+   "src": "/img/journey/photos/hon-mun.webp",
+   "file": "Hon_Mun_island_(Hòn_Mun),_Cam_Ranh,_Nha_Trang,_Việt_Nam_20140518_105634_(taken_with_Samsung_Galaxy_Note_3).jpg",
+   "author": "Nguyen Hung Vu",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hon_Mun_island_(H%C3%B2n_Mun),_Cam_Ranh,_Nha_Trang,_Vi%E1%BB%87t_Nam_20140518_105634_(taken_with_Samsung_Galaxy_Note_3).jpg",
+   "article": ""
+  },
+  "vinwonders-nt": {
+   "src": "/img/journey/photos/vinwonders-nt.webp",
+   "file": "Hanging_cabins_to_Vinpearland.jpg",
+   "author": "Jame Healy",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hanging_cabins_to_Vinpearland.jpg",
+   "article": "https://en.wikipedia.org/wiki/Vinpearl_Cable_Car"
+  },
+  "po-nagar": {
+   "src": "/img/journey/photos/po-nagar.webp",
+   "file": "Ganesh_Tempel_Po_Nagar_Nha_Trang.jpg",
+   "author": "Tervlugt",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ganesh_Tempel_Po_Nagar_Nha_Trang.jpg",
+   "article": "https://en.wikipedia.org/wiki/Po_Nagar"
+  },
+  "dambri": {
+   "src": "/img/journey/photos/dambri.webp",
+   "file": "Dam_Bri_waterfall.jpg",
+   "author": "Teijo Hakala",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dam_Bri_waterfall.jpg",
+   "article": "https://vi.wikipedia.org/wiki/Th%C3%A1c_%C4%90ambri"
+  },
+  "linh-quy": {
+   "src": "/img/journey/photos/linh-quy.webp",
+   "file": "Province-3344509.jpg",
+   "author": "Quangpraha",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Province-3344509.jpg",
+   "article": ""
+  },
+  "xuan-huong": {
+   "src": "/img/journey/photos/xuan-huong.webp",
+   "file": "Xuan_Huong_Lake_08.jpg",
+   "author": "Diane Selwyn",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Xuan_Huong_Lake_08.jpg",
+   "article": "https://en.wikipedia.org/wiki/Xu%C3%A2n_H%C6%B0%C6%A1ng_Lake"
+  },
+  "vuon-hoa-da-lat": {
+   "src": "/img/journey/photos/vuon-hoa-da-lat.webp",
+   "file": "Da_Lat_Flower_Park_01.jpg",
+   "author": "Diane Selwyn",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Da_Lat_Flower_Park_01.jpg",
+   "article": "https://vi.wikipedia.org/wiki/V%C6%B0%E1%BB%9Dn_hoa_th%C3%A0nh_ph%E1%BB%91_%C4%90%C3%A0_L%E1%BA%A1t"
+  },
+  "ga-da-lat": {
+   "src": "/img/journey/photos/ga-da-lat.webp",
+   "file": "Da_Lat_train_station_02.JPG",
+   "author": "Diane Selwyn (talk)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Da_Lat_train_station_02.JPG",
+   "article": ""
+  },
+  "thoi-son": {
+   "src": "/img/journey/photos/thoi-son.webp",
+   "file": "Tàu_du_lịch_ghé_cồn_Lân.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:T%C3%A0u_du_l%E1%BB%8Bch_gh%C3%A9_c%E1%BB%93n_L%C3%A2n.jpg",
+   "article": "https://vi.wikipedia.org/wiki/C%C3%B9_lao_Th%E1%BB%9Bi_S%C6%A1n"
+  },
+  "vinh-trang": {
+   "src": "/img/journey/photos/vinh-trang.webp",
+   "file": "VM_033_large.jpg",
+   "author": "CIA World Factbook",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:VM_033_large.jpg",
+   "article": "https://en.wikipedia.org/wiki/V%C4%A9nh_Tr%C3%A0ng_Temple"
+  },
+  "con-phung": {
+   "src": "/img/journey/photos/con-phung.webp",
+   "file": "Tàu_du_lịch_cặp_bến_cồn_Phụng.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:T%C3%A0u_du_l%E1%BB%8Bch_c%E1%BA%B7p_b%E1%BA%BFn_c%E1%BB%93n_Ph%E1%BB%A5ng.jpg",
+   "article": ""
+  },
+  "mang-thit": {
+   "src": "/img/journey/photos/mang-thit.webp",
+   "file": "Lò_gạch_Mang_Thít_Vĩnh_Long.jpg",
+   "author": "Tuong Lam Photos",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:L%C3%B2_g%E1%BA%A1ch_Mang_Th%C3%ADt_V%C4%A9nh_Long.jpg",
+   "article": ""
+  },
+  "van-thanh-mieu-vl": {
+   "src": "/img/journey/photos/van-thanh-mieu-vl.webp",
+   "file": "Văn_Thánh_Miếu_Vĩnh_Long.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:V%C4%83n_Th%C3%A1nh_Mi%E1%BA%BFu_V%C4%A9nh_Long.jpg",
+   "article": "https://vi.wikipedia.org/wiki/V%C4%83n_Th%C3%A1nh_Mi%E1%BA%BFu_V%C4%A9nh_Long"
+  },
+  "cai-rang": {
+   "src": "/img/journey/photos/cai-rang.webp",
+   "file": "Cai_Rang_Floating_Market_1.jpg",
+   "author": "Christophe95",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cai_Rang_Floating_Market_1.jpg",
+   "article": ""
+  },
+  "ninh-kieu": {
+   "src": "/img/journey/photos/ninh-kieu.webp",
+   "file": "Ninhkieuquay.jpg",
+   "author": "Hung190596",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ninhkieuquay.jpg",
+   "article": "https://vi.wikipedia.org/wiki/B%E1%BA%BFn_Ninh_Ki%E1%BB%81u"
+  },
+  "ba-chua-xu": {
+   "src": "/img/journey/photos/ba-chua-xu.webp",
+   "file": "Mieuba2.jpg",
+   "author": "Bùi Thuỵ Đào Nguyên (thảo luận)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Mieuba2.jpg",
+   "article": "https://vi.wikipedia.org/wiki/Mi%E1%BA%BFu_B%C3%A0_Ch%C3%BAa_X%E1%BB%A9_N%C3%BAi_Sam"
+  },
+  "tra-su": {
+   "src": "/img/journey/photos/tra-su.webp",
+   "file": "Trà_Sư_1.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tr%C3%A0_S%C6%B0_1.jpg",
+   "article": "https://vi.wikipedia.org/wiki/R%E1%BB%ABng_tr%C3%A0m_Tr%C3%A0_S%C6%B0"
+  },
+  "nguyen-trung-truc": {
+   "src": "/img/journey/photos/nguyen-trung-truc.webp",
+   "file": "Đền_thờ_Nguyễn_Trung_Trực.jpg",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_th%E1%BB%9D_Nguy%E1%BB%85n_Trung_Tr%E1%BB%B1c.jpg",
+   "article": ""
+  },
+  "mui-ca-mau": {
+   "src": "/img/journey/photos/mui-ca-mau.webp",
+   "file": "Tuongdaimuicamau.jpg",
+   "author": "Thanhminh2000",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tuongdaimuicamau.jpg",
+   "article": "https://vi.wikipedia.org/wiki/M%C5%A9i_C%C3%A0_Mau"
+  },
+  "u-minh-ha": {
+   "src": "/img/journey/photos/u-minh-ha.webp",
+   "file": "Chuối_tại_rừng_U_Minh_hạ.jpg",
+   "author": "TuanUt",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chu%E1%BB%91i_t%E1%BA%A1i_r%E1%BB%ABng_U_Minh_h%E1%BA%A1.jpg",
+   "article": "https://vi.wikipedia.org/wiki/V%C6%B0%E1%BB%9Dn_qu%E1%BB%91c_gia_U_Minh_H%E1%BA%A1"
+  },
+  "peak:langbiang": {
+   "src": "/img/journey/photos/peak-langbiang.webp",
+   "file": "Đỉnh_Langbiang.JPG",
+   "author": "Liftold (thảo luận)",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%89nh_Langbiang.JPG",
+   "article": "https://vi.wikipedia.org/wiki/N%C3%BAi_Lang_Biang"
+  },
+  "peak:ba-den": {
+   "src": "/img/journey/photos/peak-ba-den.webp",
+   "file": "Dau_Tieng_Lake_-_50766650163.png",
+   "author": "Cuong Tran",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Dau_Tieng_Lake_-_50766650163.png",
+   "article": "https://en.wikipedia.org/wiki/B%C3%A0_%C4%90en_Mountain"
+  },
+  "peak:chua-chan": {
+   "src": "/img/journey/photos/peak-chua-chan.webp",
+   "file": "Chua_Chan_mount..JPG",
+   "author": "Cheers!",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chua_Chan_mount..JPG",
+   "article": "https://vi.wikipedia.org/wiki/N%C3%BAi_Ch%E1%BB%A9a_Chan"
+  },
+  "peak:nui-cam": {
+   "src": "/img/journey/photos/peak-nui-cam.webp",
+   "file": "Thất_Sơn.jpg",
+   "author": "Bem photography:",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Th%E1%BA%A5t_S%C6%A1n.jpg",
+   "article": "https://vi.wikipedia.org/wiki/N%C3%BAi_C%E1%BA%A5m"
+  },
+  "peak:ta-cu": {
+   "src": "/img/journey/photos/peak-ta-cu.webp",
+   "file": "Tuongphat49m.jpg",
+   "author": "Lê Thy at vi.wikipedia",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Tuongphat49m.jpg",
+   "article": "https://vi.wikipedia.org/wiki/N%C3%BAi_T%C3%A0_C%C3%BA"
+  },
+  "peak:nui-chua": {
+   "src": "/img/journey/photos/peak-nui-chua.webp",
+   "file": "Lo_O_Stream,_Nui_Chua_National_Park.jpg",
+   "author": "Suriya Vij",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Lo_O_Stream,_Nui_Chua_National_Park.jpg",
+   "article": "https://en.wikipedia.org/wiki/N%C3%BAi_Ch%C3%BAa_National_Park"
+  }
+ }
+}

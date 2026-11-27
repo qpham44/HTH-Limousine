@@ -1,0 +1,53 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(38px, 4.5vw, 64px) clamp(26px, 3vw, 42px);
+}
+@media (max-width: 760px) { .list { grid-template-columns: 1fr; } }
+
+.item { display: flex; flex-direction: column; gap: 18px; }
+.media { aspect-ratio: 16 / 11; overflow: hidden; background: var(--ground-alt); }
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.item:hover .media img { transform: scale(1.025); }
+
+.name { font-size: clamp(1.3rem, 2vw, 1.6rem); line-height: 1.35; }
+.blurb { font-size: 15px; line-height: 1.75; color: var(--ink-3); max-width: 46ch; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.meta strong { font-weight: 400; font-variant-numeric: tabular-nums; }
+.meta span { color: var(--ink-3); }
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.price { font-size: 16px; font-variant-numeric: tabular-nums; }
+.price small { font-size: 12.5px; color: var(--ink-3); }
+
+/* Vehicle detail ------------------------------------------------------------ */
+
+.detailHero { position: relative; aspect-ratio: 21 / 9; overflow: hidden; background: var(--ground-alt); }
+.detailHero img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .detailHero { aspect-ratio: 4 / 3; } }
+
+.detailIntro { max-width: 44rem; display: flex; flex-direction: column; gap: 18px; }
+.detailIntro p { font-size: clamp(1.0625rem, 1.5vw, 1.15rem); line-height: 1.8; color: var(--ink-2); }
+
+.sidebar { display: flex; flex-direction: column; gap: 26px; position: sticky; top: 100px; }
+@media (max-width: 880px) { .sidebar { position: static; } }

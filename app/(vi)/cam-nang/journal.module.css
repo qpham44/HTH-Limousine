@@ -1,0 +1,55 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(30px, 3.6vw, 46px) clamp(24px, 3vw, 36px);
+}
+@media (max-width: 940px) { .list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .list { grid-template-columns: 1fr; } }
+
+.item { display: flex; flex-direction: column; gap: 15px; }
+.media { aspect-ratio: 16 / 10; overflow: hidden; background: var(--ground-alt); }
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.item:hover .media img { transform: scale(1.025); }
+
+.meta {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.itemTitle { font-size: 1.22rem; line-height: 1.4; }
+.itemLead { font-size: 14.5px; line-height: 1.75; color: var(--ink-3); }
+
+/* Article ------------------------------------------------------------------- */
+
+.article { max-width: 40rem; margin-inline: auto; }
+.articleHead { display: flex; flex-direction: column; gap: 18px; padding-block: clamp(28px, 4vw, 44px) clamp(28px, 3vw, 36px); }
+.articleLead { font-size: clamp(1.1rem, 1.7vw, 1.28rem); line-height: 1.75; color: var(--ink-2); }
+
+.hero { aspect-ratio: 16 / 9; overflow: hidden; background: var(--ground-alt); margin-bottom: clamp(32px, 4vw, 48px); }
+.hero img { width: 100%; height: 100%; object-fit: cover; }
+
+.body { display: flex; flex-direction: column; gap: clamp(26px, 3vw, 36px); }
+.section { display: flex; flex-direction: column; gap: 14px; }
+.sectionHeading { font-size: clamp(1.15rem, 1.8vw, 1.35rem); line-height: 1.45; }
+.body p { font-size: 1.0625rem; line-height: 1.85; color: var(--ink-2); }
+.body ul { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+.body li {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.footNote {
+  margin-top: clamp(36px, 4vw, 52px);
+  padding-top: 26px;
+  border-top: 1px solid var(--rule);
+}

@@ -1,0 +1,329 @@
+/* ==========================================================================
+   HTH Limousine — design tokens
+   Dark-dominant obsidian/gold, from the HTH Limousine.dc.html redesign.
+   Gold is the only accent. Crimson is the logo, nowhere else.
+   ========================================================================== */
+
+:root {
+  /* surfaces */
+  --ground:      #0A0708;  /* page */
+  --ground-alt:  #14100E;  /* alternating band, header wash, footer */
+  --cream:       #111113;  /* booking module, elevated panels */
+  --dark:        #050403;  /* the one deliberate near-black passage (D'Car band) */
+  --dark-alt:    #211913;  /* raised surface / hover */
+
+  /* ink */
+  --ink:         #EEEAD5;
+  --ink-2:       #C9BFAC;
+  --ink-3:       #9C9384;
+  --ivory:       #EEEAD5;  /* text on the darkest passage */
+  --ivory-2:     #C9BFAC;
+
+  /* rules — bronze hairlines on dark */
+  --rule:        rgba(97, 69, 44, 0.55);
+  --rule-2:      rgba(97, 69, 44, 0.7);
+  --rule-dark:   rgba(214, 158, 74, 0.26);
+
+  /* accent — two values, one colour */
+  --gold:        #D69E4A;  /* rules, marks, fills */
+  --gold-ink:    #D69E4A;  /* gold as text, resting state */
+  --gold-deep:   #EEA943;  /* hover / emphasis gold */
+  --gold-warm:   #EEA943;  /* gold as text on the darkest passage */
+
+  /* logo only */
+  --crimson:     #B02026;
+
+  /* type */
+  --font-sans: var(--font-montserrat), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --step-xl: clamp(2.1rem, 5vw, 3.55rem);
+  --step-lg: clamp(1.6rem, 3.1vw, 2.3rem);
+  --step-md: clamp(1.25rem, 2.1vw, 1.55rem);
+  --step-sm: 1.0625rem;
+
+  /* layout */
+  --gutter: clamp(20px, 4.4vw, 56px);
+  --maxw: 1240px;
+  --prose: 34rem;
+
+  /* Native date/time pickers, dropdown lists and scrollbars render dark too. */
+  color-scheme: dark;
+}
+
+select option { background: var(--ground-alt); color: var(--ink); }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Anchors land below the fixed header in its compact state. */
+  scroll-padding-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img, svg, video { display: block; max-width: 100%; }
+
+/* Room for the fixed Zalo + hotline bar on phones. */
+@media (max-width: 767px) {
+  body { padding-bottom: 56px; }
+}
+
+a { color: inherit; text-decoration: none; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--gold-ink);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+::selection { background: rgba(214, 158, 74, 0.28); }
+
+/* --------------------------------------------------------------------------
+   Typography primitives
+   Vietnamese diacritics stack high: never below 1.3 on display, 1.7 on body.
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--step-xl); line-height: 1.3; }
+h2 { font-size: var(--step-lg); line-height: 1.35; }
+h3 { font-size: var(--step-md); line-height: 1.4; }
+h4 { font-size: var(--step-sm); line-height: 1.45; letter-spacing: -0.005em; }
+
+p { margin: 0; text-wrap: pretty; }
+
+.u-prose { max-width: var(--prose); }
+.u-lead  { font-size: clamp(1.0625rem, 1.5vw, 1.1875rem); line-height: 1.75; color: var(--ink-2); }
+.u-quiet { color: var(--ink-3); }
+.u-num   { font-variant-numeric: tabular-nums; }
+
+/* Small-caps eyebrow with the gold hairline. Used once per section. */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+}
+.eyebrow::before {
+  content: "";
+  flex: none;
+  width: 34px;
+  height: 1px;
+  background: var(--gold);
+}
+.eyebrow--dark { color: var(--gold-warm); }
+
+.label {
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+}
+
+/* --------------------------------------------------------------------------
+   Layout primitives
+   -------------------------------------------------------------------------- */
+
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section { padding-block: clamp(64px, 9vw, 118px); }
+.section--tight { padding-block: clamp(48px, 6vw, 78px); }
+.section--alt { background: var(--ground-alt); }
+.section--dark { background: var(--dark); color: var(--ivory); }
+.section--dark h1, .section--dark h2, .section--dark h3 { color: var(--ivory); }
+.section--rule-top { border-top: 1px solid var(--rule); }
+
+.stack { display: flex; flex-direction: column; }
+.stack-6  { gap: 6px; }
+.stack-10 { gap: 10px; }
+.stack-14 { gap: 14px; }
+.stack-20 { gap: 20px; }
+.stack-28 { gap: 28px; }
+.stack-40 { gap: 40px; }
+
+/* Section head: title left, supporting line right, aligned on the baseline. */
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 22px clamp(32px, 6vw, 80px);
+  align-items: end;
+  margin-bottom: clamp(36px, 5vw, 58px);
+}
+.head > .head-title { display: flex; flex-direction: column; gap: 18px; max-width: 34ch; }
+@media (max-width: 800px) {
+  .head { grid-template-columns: 1fr; align-items: start; }
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 28px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn--gold { background: var(--gold); color: var(--ground); }
+.btn--gold:hover { background: var(--gold-warm); }
+.btn--outline { border-color: var(--rule-2); color: var(--ink); background: transparent; }
+.btn--outline:hover { border-color: var(--gold-ink); color: var(--gold-deep); }
+.btn--onDark { border-color: rgba(242, 236, 224, 0.34); color: var(--ivory); background: transparent; }
+.btn--onDark:hover { border-color: var(--gold); color: var(--gold-warm); }
+
+/* Text link that behaves like a caption-sized call to action. */
+.tlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  /* 21px of line box is under the 24px minimum target size, so pad it out. */
+  padding-block: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+.tlink:hover { gap: 14px; color: var(--gold-deep); }
+.tlink--onDark { color: var(--gold-warm); }
+.tlink--onDark:hover { color: var(--gold); }
+
+/* --------------------------------------------------------------------------
+   Restrained reveal — fade + 10px rise, once, on first scroll into view
+   -------------------------------------------------------------------------- */
+
+/* Content is visible by default. The hidden state is applied by script, and
+   only once it has confirmed it can observe — so no JavaScript, a reduced-motion
+   preference, or a browser that never reports intersections all leave the page
+   readable rather than blank. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal.is-armed {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal.is-armed.is-in { opacity: 1; transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Leaflet — restyled for the light palette.
+   Pin markup is injected by Leaflet as a divIcon, so it lives here, not in a module.
+   -------------------------------------------------------------------------- */
+
+.leaflet-container {
+  background: #0B0908 !important;
+  font-family: var(--font-sans) !important;
+  outline: none;
+}
+/* The tile provider is keyless daytime OpenStreetMap raster — there is no keyless
+   dark basemap. Inverting it fakes one: hue-rotate puts land/water back to a
+   plausible relative hue, and the desaturation keeps the gold route line the
+   loudest thing on the map. */
+.leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.88) saturate(0.35); }
+.leaflet-control-attribution {
+  background: rgba(10, 7, 8, 0.72) !important;
+  color: var(--ink-3) !important;
+  font-size: 9.5px !important;
+}
+.leaflet-control-attribution a { color: var(--ink-3) !important; }
+.leaflet-bar { border: none !important; box-shadow: none !important; }
+.leaflet-bar a {
+  background: var(--ground) !important;
+  color: var(--ink) !important;
+  border-color: var(--rule-2) !important;
+}
+.leaflet-bar a:hover { background: var(--cream) !important; color: var(--gold-deep) !important; }
+
+.hth-pin { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.hth-dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(214, 158, 74, 0.24);
+}
+.hth-dot.is-end {
+  background: var(--ground);
+  border: 2px solid var(--gold-ink);
+}
+.hth-tag {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: rgba(10, 7, 8, 0.86);
+  border: 1px solid var(--rule-2);
+  border-radius: 2px;
+  padding: 3px 8px;
+}
+
+/* Skip link */
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--ink);
+  color: var(--ground);
+  padding: 12px 18px;
+  font-size: 13px;
+}
+.skip:focus { left: 12px; top: 12px; }
+
+/* GSAP SplitText masks: room for stacked Vietnamese diacritics */
+.gs-line-mask { padding-block: 0.14em; margin-block: -0.14em; }

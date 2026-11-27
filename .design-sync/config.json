@@ -1,0 +1,7 @@
+{
+  "shape": "package",
+  "pkg": "hth-limousine",
+  "srcDir": "components",
+  "cssEntry": "app/globals.css",
+  "tsconfig": "tsconfig.json"
+}
